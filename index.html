@@ -4,162 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Forensic Services</title>
-  <style>
-    @font-face {
-      font-family: 'MFEK Sans Rounded Semi Bold';
-      src: url('fonts/MFEKSansRounded-SemiBold.woff2') format('woff2');
-    }
-
-    @font-face {
-      font-family: 'MFEK Sans Rounded Light';
-      src: url('fonts/MFEKSansRounded-Light.woff2') format('woff2');
-    }
-
-    @font-face {
-      font-family: 'MFEK Sans Rounded Bold';
-      src: url('fonts/MFEKSansRounded-Bold.woff2') format('woff2');
-    }
-
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: 'MFEK Sans Rounded Light', Arial, sans-serif;
-    }
-
-    .hero {
-      position: relative;
-      height: 100vh;
-      background: url('images/img1.jpg') no-repeat center center/cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #FFFFFF;
-      text-align: center;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-      width: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
-      z-index: 1;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      padding: 40px;
-    }
-
-    .hero-content h1 {
-      font-family: 'MFEK Sans Rounded Semi Bold';
-      font-size: 90pt;
-      margin-bottom: 40px;
-    }
-
-    .hero-content p {
-      font-family: 'MFEK Sans Rounded Semi Bold';
-      font-size: 32pt;
-      margin-bottom: 60px;
-    }
-
-    .hero-content p span {
-      margin: 0 10px;
-    }
-
-    .cta-button {
-      font-family: 'MFEK Sans Rounded Semi Bold';
-      font-size: 23pt;
-      color: #FFFFFF;
-      background-color: #C00000;
-      padding: 18px 40px;
-      border: none;
-      border-radius: 50px;
-      text-decoration: none;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #a00000;
-    }
-
-    .content {
-      padding: 40px;
-    }
-
-    .content h2 {
-      color: #b30000;
-      text-align: center;
-      font-family: 'MFEK Sans Rounded Semi Bold';
-      font-size: 75pt;
-      margin-bottom: 30px;
-    }
-
-    .services {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .service {
-      padding: 20px;
-      border: 1px solid #ccc;
-      font-size: 30pt;
-      font-family: 'MFEK Sans Rounded Light';
-    }
-
-    .service h3 {
-      color: #b30000;
-      font-family: 'MFEK Sans Rounded Bold';
-      font-size: 30pt;
-    }
-
-    .contact {
-      background-color: #f5f5f5;
-      padding: 40px;
-      text-align: center;
-    }
-
-    .contact h2 {
-      margin-bottom: 20px;
-      font-family: 'MFEK Sans Rounded Semi Bold';
-      font-size: 75pt;
-    }
-
-    .contact p {
-      margin-bottom: 20px;
-      font-size: 30pt;
-      font-family: 'MFEK Sans Rounded Light';
-    }
-
-    .contact button {
-      background-color: #C00000;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 23pt;
-      font-family: 'MFEK Sans Rounded Semi Bold';
-      border-radius: 50px;
-      cursor: pointer;
-    }
-
-    .highlight {
-      color: #C00000;
-      font-weight: bold;
-      font-size: 30pt;
-      font-family: 'MFEK Sans Rounded Light';
-    }
-
-    @media (max-width: 900px) {
-      .services {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <section class="hero">
@@ -176,6 +21,36 @@
       <a href="#contact" class="cta-button">Book a Consultation</a>
     </div>
   </section>
+
+    <!-- Breadcrumb navigation -->
+    <div class="breadcrumb">
+        <a href="#" class="home-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+            </svg>
+        </a>
+        <a href="#">Home</a>
+        <span class="separator">›</span>
+        <a href="#">Services</a>
+        <span class="separator">›</span>
+        <a href="#">Business in Africa</a>
+        <span class="separator">›</span>
+        <a href="#">Business formation</a>
+        <span class="separator">›</span>
+        <span>Expanding your global footprint in Africa</span>
+    </div>
+    
+    <!-- Hero section -->
+    <div class="heroo">
+        <div class="heroo-left">
+            <p>Latita Africa offers specialised forensic services to assist clients in identifying, investigating, and resolving financial discrepancies and legal disputes. Our comprehensive approach ensures thorough analysis and objective reporting.</p>
+        </div>
+        <div class="heroo-right">
+            <h1>Ensuring Your Integrity And Transparency</h1>
+        </div>
+    </div>
+
 
   <div class="content">
     <h2>Forensic Tax Services</h2>
@@ -207,16 +82,182 @@
     </div>
   </div>
 
-  <div class="contact" id="contact">
-    <div class="contact-left">
+  <div class="contact-container" id="contact">
+    <div class="contact-form">
       <h2>Contact Us Today</h2>
       <p>to schedule a consultation and let us make your life a bit more easier.</p>
       <button>Contact Us</button>
     </div>
-    <div class="contact-right">
-      <p class="highlight">
-        Ensuring your organisation maintains Integrity and transparency in all financial matters.
-      </p>
+    <div class="contact-message">
+      Ensuring your organisation maintains Integrity and transparency in all financial matters.
     </div>
-</body>
-</html>
+  </div>
+
+ 
+    <div class="container">
+        <h1>Request Service</h1>
+        
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address">
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" placeholder="Contact Number (Optional)">
+                </div>
+                <div class="form-group">
+                    <select>
+                        <option selected disabled>Select Service</option>
+                        <option>Forensic Services</option>
+                        <option>Business Formation</option>
+                        <option>Legal Services</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group" style="width: 100%;">
+                    <textarea placeholder="Further Information"></textarea>
+                </div>
+            </div>
+            
+            <div class="social-section">
+                <div class="social-title">Where did you here about us?</div>
+                <div class="social-options">
+                    <label class="social-option">
+                        <input type="checkbox" name="source" value="facebook">
+                        Facebook
+                    </label>
+                    <label class="social-option">
+                        <input type="checkbox" name="source" value="x">
+                        X
+                    </label>
+                    <label class="social-option">
+                        <input type="checkbox" name="source" value="instagram">
+                        Instagram
+                    </label>
+                    <label class="social-option">
+                        <input type="checkbox" name="source" value="linkedin">
+                        LinkedIn
+                    </label>
+                    <label class="social-option">
+                        <input type="checkbox" name="source" value="online-publication">
+                        Online Publication
+                    </label>
+                    <label class="social-option">
+                        <input type="checkbox" name="source" value="word-of-mouth">
+                        Word Of Mouth
+                    </label>
+                </div>
+            </div>
+            
+            <div class="captcha">
+                <img src="/api/placeholder/150/50" alt="CAPTCHA">
+            </div>
+            
+            <div class="checkbox-container">
+                <input type="checkbox" id="privacy-policy">
+                <label for="privacy-policy" class="privacy-text">I have read the <a href="#">Privacy Policy</a> and agree to its terms.</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Request</button>
+        </form>
+    </div>
+
+
+    <div class="top-section">
+      <div class="content">
+        <h1>Forensics</h1>
+        <div class="link-container">
+          <a href="#" class="link">Independent audit <span class="arrow">→</span></a>
+          <a href="#" class="link">Independent Review <span class="arrow">→</span></a>
+          <a href="#" class="link">Investigations and queries <span class="arrow">→</span></a>
+        </div>
+      </div>
+      <div class="image">
+        <img src="images/img1.png" alt="Target with red dart hitting bullseye">
+      </div>
+    </div>
+    
+    <div class="bottom-section">
+      <div class="contact-text">
+        <h2>Contact our qualified consultants</h2>
+        <p>Discover how Latita Africa can assist you.</p>
+      </div>
+      <div class="button-container">
+        <a href="#" class="callback-button">Request a callback</a>
+      </div>
+    </div>
+  
+    <div class="contact-info">
+      <div><i class="fas fa-map-marker-alt"></i><br>Find us<br>The Woodlands Office Park</div>
+      <div><i class="fas fa-phone"></i><br>Call us<br>086 152 8482</div>
+      <div><i class="fas fa-envelope"></i><br>Mail us<br>info@latitaafrica.com</div>
+    </div>
+  
+    <footer class="footer">
+      <div class="footer-section footer-logo">
+        <img src="images/img2.png" alt="Latita Africa logo">
+        <p>LATITA <br><strong>AFRICA</strong></p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">Who is Latita Africa</a></li>
+          <li><a href="#">Ubuntu Connect</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Podcasts & Interviews</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="#">The Latita Team</a></li>
+          <li><a href="#">Partnerships</a></li>
+          <li><a href="#">Industries</a></li>
+          <li><a href="#">Events</a></li>
+          <li><a href="#">Press Releases</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="#">Tax</a></li>
+          <li><a href="#">Advisory</a></li>
+          <li><a href="#">Business In Africa</a></li>
+          <li><a href="#">Corporate Tax</a></li>
+          <li><a href="#">Value Added Tax (VAT)</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-section">
+        <h4>&nbsp;</h4>
+        <ul>
+          <li><a href="#">Legal</a></li>
+          <li><a href="#">Risk Assurance</a></li>
+          <li><a href="#">Tax Debt And Dispute</a></li>
+          <li><a href="#">Individual Tax</a></li>
+          <li><a href="#">Crypto Asset Tax</a></li>
+        </ul>
+      </div>
+    </footer>
+  
+    <div class="back-to-top">^</div>
+  </body>
+  </html>
